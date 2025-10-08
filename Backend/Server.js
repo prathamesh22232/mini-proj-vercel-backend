@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 });
 
 // Available Routes
-app.use('/api/auth', require('./Route/auth'))
+app.use('/api/auth', require('./route/auth'))
 //app.use('/api/notes', require('./routes/notes'))
 
 
