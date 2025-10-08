@@ -9,6 +9,10 @@ const port = 5000
 app.use(cors())
 app.use(express.json())
 
+app.get('/', (req, res) => {
+    res.status(200).send("API is alive and connected to MongoDB!");
+});
+
 // Available Routes
 app.use('/api/auth', require('./Route/auth'))
 //app.use('/api/notes', require('./routes/notes'))
